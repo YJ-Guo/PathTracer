@@ -1,0 +1,274 @@
+{
+  "frames" :[
+    {
+    "frameNumber" : 0,
+    "scene" : {
+      "camera" : {
+        "target" : [0, 2.5, 0],
+        "eye" : [0, 5.5, -30],
+        "worldUp" : [0, 1, 0],
+        "fov" : 19.5,
+        "width" : 1200,
+        "height": 1200
+      },
+      "primitives" : [
+        {
+          "shape" : "SquarePlane",
+          "name" : "Floor",
+          "material" : "matteWhite",
+          "transform" : {
+            "translate" : [0, -2, 0],
+            "rotate" : [-90, 0, 0],
+            "scale" : [12, 12, 1]
+          }
+        },
+        {
+          "shape" : "SquarePlane",
+          "name" : "Red wall",
+          "material" : "redMirror",
+          "transform" : {
+            "translate" : [5,2.5,0],
+            "rotate" : [0, -90, 0],
+            "scale" : [12, 12, 1]
+          }
+        },
+        {
+          "shape" : "SquarePlane",
+          "name" : "Green Wall",
+          "material" : "greenMirror",
+          "transform" : {
+            "translate" : [-5, 2.5, 0],
+            "rotate" : [0,90,0],
+            "scale" : [12, 12, 1]
+          }
+        },
+        {
+          "shape" : "SquarePlane",
+          "name" : "Back Wall",
+          "material" : "matteWhite",
+          "transform" : {
+            "translate" : [0,2.5,5],
+            "rotate" : [0,180,0],
+            "scale" : [12, 12, 1]
+          }
+        },
+        {
+          "shape" : "SquarePlane",
+          "name" : "Ceiling Wall",
+          "material" : "matteWhite",
+          "transform" : {
+            "translate" : [0, 7.5, 0],
+            "rotate" : [90,0,0],
+            "scale" : [12, 12, 1]
+          }
+        },
+
+        {
+          "shape" : "Sphere",
+          "name" : "Sphere1",
+          "material" : "glassMaterial",
+          "transform" : {
+            "translate" : [0, 6, 3],
+            "rotate" : [0, -45, 0],
+            "scale" : [0.5, 0.5, 0.5]
+          }
+        },
+        {
+          "shape" : "Sphere",
+          "name" : "Sphere2",
+          "material" : "glassMaterial",
+          "transform" : {
+            "translate" : [-2, 5, 2.5],
+            "rotate" : [0,30,0],
+            "scale" : [0.5, 0.5, 0.5]
+          }
+        },
+        {
+          "shape" : "Sphere",
+          "name" : "Sphere3",
+          "material" : "iron",
+          "transform" : {
+            "translate" : [2, 5, 2.5],
+            "rotate" : [0,27.5,0],
+            "scale" : [0.5, 0.5, 0.5]
+          }
+        },
+        {
+          "shape" : "Sphere",
+          "name" : "Sphere4",
+          "material" : "copper",
+          "transform" : {
+            "translate" : [-3, 3, 1.5],
+            "rotate" : [0,27.5,0],
+            "scale" : [0.5, 0.5, 0.5]
+          }
+        },
+        {
+          "shape" : "Sphere",
+          "name" : "Sphere5",
+          "material" : "sliver",
+          "transform" : {
+            "translate" : [3, 3, 1.5],
+            "rotate" : [0,27.5,0],
+            "scale" : [0.5, 0.5, 0.5]
+          }
+        },
+        {
+          "shape" : "Sphere",
+          "name" : "Sphere6",
+          "material" : "gold",
+          "transform" : {
+            "translate" : [-2, 1.25, 1],
+            "rotate" : [0,27.5,0],
+            "scale" : [0.5, 0.5, 0.5]
+          }
+        },
+        {
+          "shape" : "Sphere",
+          "name" : "Sphere7",
+          "material" : "sliver",
+          "transform" : {
+            "translate" : [2, 1.25, 1],
+            "rotate" : [0,27.5,0],
+            "scale" : [0.5, 0.5, 0.5]
+          }
+        },
+        {
+          "shape" : "Sphere",
+          "name" : "Sphere8",
+          "material" : "plasticMaterial",
+          "transform" : {
+            "translate" : [0, 0.25, 0.5],
+            "rotate" : [0,27.5,0],
+            "scale" : [0.5, 0.5, 0.5]
+          }
+        }
+        ],
+      "lights" : [
+        {
+          "shape" : "SquarePlane",
+          "name" : "Light Source Yellow",
+          "type" : "DiffuseAreaLight",
+          "lightColor" : [17,12,4],
+          "intensity" : 2,
+          "transform" : {
+            "translate" : [2,7.45,0],
+            "rotate" : [90,0,0],
+            "scale" : [3, 3, 1]
+          },
+          "isDelta" : false,
+          "twoSided" : false
+        },
+        {
+          "shape" : "SquarePlane",
+          "name" : "Light Source Blue",
+          "type" : "DiffuseAreaLight",
+          "lightColor" : [4,12,17],
+          "intensity" : 2,
+          "transform" : {
+            "translate" : [-2,7.45,0],
+            "rotate" : [90,0,0],
+            "scale" : [3, 3, 1]
+          },
+          "isDelta" : false,
+          "twoSided" : false
+        }
+      ],
+      "materials" : [
+        {
+          "type" : "MatteMaterial",
+          "name" : "matteWhite",
+            "Kd" : [0.85, 0.81, 0.78],
+          "sigma": 0
+        },
+        {
+          "type" : "MatteMaterial",
+          "name" : "matteRed",
+          "Kd" : [0.63, 0.065, 0.05],
+          "sigma": 0
+        },
+        {
+          "type" : "MatteMaterial",
+          "name" : "matteGreen",
+          "Kd" : [0.14, 0.35, 0.091],
+          "sigma": 0
+        },
+        {
+          "type": "TransmissiveMaterial",
+          "name": "transmissiveMaterial",
+          "Kt": [1, 1, 1],
+          "eta": 1.2,
+          "roughness":0.01
+        },
+        {
+          "type": "GlassMaterial",
+          "name": "glassMaterial",
+          "Kt": [0.9, 0.9, 1],
+          "Kr": [1, 1, 0.2],
+          "eta": 1.55
+        },
+        {
+          "type" : "MetalMaterial",
+          "name" : "gold",
+          "eta"  : [0.18, 0.49, 1.17],
+          "k"  : [3.45, 2.22, 1.75],
+          "roughness": 0.1
+        },
+        {
+          "type" : "MetalMaterial",
+          "name" : "iron",
+          "eta"  : [2.9, 2.9, 2.67],
+          "k"  : [3.08, 2.92, 2.82],
+          "roughness": 0.1
+        },
+        {
+          "type" : "MetalMaterial",
+          "name" : "aluminum",
+          "eta"  : [1.35, 0.9, 0.7],
+          "k"  : [7.5, 6.2, 5.6],
+          "roughness": 0.1
+        },
+        {
+          "type" : "MetalMaterial",
+          "name" : "copper",
+          "eta"  :  [0.26, 0.80, 1.24],
+          "k"  : [3.65, 2.49, 2.29],
+          "roughness": 0.1
+        },
+        {
+          "type" : "MetalMaterial",
+          "name" : "sliver",
+          "eta"  : [0.16, 0.143, 0.136],
+          "k"  : [3.93, 3, 2.55],
+          "roughness": 0.1
+        },
+        {
+          "type": "PlasticMaterial",
+          "name": "plasticMaterial",
+          "Kd": [1, 0.5, 0.5],
+          "Ks": [0.7, 0.5, 0.7],
+          "roughness":0.2
+        },
+        {
+          "type": "MatteMaterial",
+          "name": "texturedMaterial",
+          "Kd": [1, 1, 1],
+          "textureMap": "wood/COLOR.JPG"
+        },
+        {
+          "type": "MirrorMaterial",
+          "name": "redMirror",
+          "Kr": [0.63, 0.065, 0.05],
+          "roughness": 0.01
+        },
+        {
+          "type": "MirrorMaterial",
+          "name": "greenMirror",
+          "Kr": [0.14, 0.35, 0.091],
+          "roughness": 0.01
+        }
+      ]
+    }
+  }
+]
+}
